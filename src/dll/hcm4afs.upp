@@ -1,0 +1,29 @@
+target
+	hcm4afs.dll;
+
+library(WIN32) "kernel32 user32 advapi32 shell32 winmm";
+
+file
+	hcm4afs.cpp,
+	hcm4afs.h,
+	hcmfs.h,
+	hcmfs.cpp,
+	antData.h,
+	antData.cpp,
+	hcmData.h,
+	hcmData.cpp,
+	prop452.h,
+	prop452.cpp,
+	lib452_18.h,
+	lib452_18.cpp,
+	nfd.h,
+	nfd.cpp,
+	terrain.h,
+	terrain.cpp,
+	annex11.h,
+	annex11.cpp,
+	common.h;
+
+mainconfig
+	"" = "DLL";
+

@@ -1,0 +1,20 @@
+FN(void, HCM4AFS, (double&, double&, double&, \
+ 				   double&, double&, double&, int&, \
+ 				   const char*, const char*, \
+ 				   const char*, const char*, \
+ 				   const char*, const char*, const char*, \
+				   int, double, double, double ))
+
+FN(void, HCM4AFS_A, (DataCalc&, \
+ 				     const HcmRecDll&, const HcmRecDll&, \
+				     const InCalcRec& ))
+
+FN(void, HCM4AFS_P, (DataCalc&, \
+ 				     const HcmRecDll&, const HcmRecDll&, \
+ 				     const HcmRecDll&, const HcmRecDll&, \
+				     const InCalcRec& ))
+
+FN(void, HCM4AFS_ANNEX11, (const double, const double, const double, \
+  						   const int, const char*, \
+						   char*, int&,	int& ))
+

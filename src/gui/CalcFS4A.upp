@@ -1,0 +1,40 @@
+uses
+	CtrlLib,
+	Functions4U,
+	GridCtrl,
+	SqlCtrl,
+	Xlnt,
+	DropGrid,
+	plugin/pcre;
+
+file
+	main.cpp,
+	CalcFs4A.h,
+	ctrlViewPack.h,
+	ctrlEditPack.h,
+	dtPack.h,
+	ctrlCalc.h,
+	dtCalc.h,
+	ctrlReport.h,
+	dtHcmDll.h,
+	dtHcmData.h,
+	dtHcmIN.h,
+	appCfg.h,
+	dtHcmError.h,
+	dtMult.h,
+	dtSingle.h,
+	dtTriger.h,
+	dtAntData.h,
+	dtTerrain.h,
+	iniCfg.h,
+	hcm4afs.dli,
+	sqLite.h,
+	sqLite.sch,
+	common.h,
+	app.iml,
+	app.lay,
+	icon.rc;
+
+mainconfig
+	"" = "GUI";
+

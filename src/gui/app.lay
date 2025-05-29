@@ -1,0 +1,173 @@
+LAYOUT(FrmMain, 936, 484)
+	ITEM(Upp::Button, btn_New, LeftPosZ(12, 36).TopPosZ(8, 28))
+	ITEM(Upp::Button, btn_Open, LeftPosZ(52, 36).TopPosZ(8, 28))
+	ITEM(Upp::Button, btn_Save, LeftPosZ(92, 36).TopPosZ(8, 28))
+	ITEM(Upp::Button, btn_SaveAs, LeftPosZ(132, 36).TopPosZ(8, 28))
+	ITEM(Upp::Label, lb_TopPanel, SetFrame(Upp::BlackFrame()).HSizePosZ(4, 4).TopPosZ(4, 36))
+	ITEM(Upp::Button, btn_About, LeftPosZ(332, 36).TopPosZ(8, 28))
+	ITEM(Upp::Button, btn_Config, LeftPosZ(292, 36).TopPosZ(8, 28))
+	ITEM(Upp::Button, btn_Trigger, LeftPosZ(252, 36).TopPosZ(8, 28))
+	ITEM(Upp::Button, btn_Check, LeftPosZ(172, 36).TopPosZ(8, 28))
+	ITEM(Upp::Button, btn_Exit, RightPosZ(12, 36).TopPosZ(8, 28))
+	ITEM(Upp::Button, btn_CalcSingle, LeftPosZ(212, 36).TopPosZ(8, 28))
+	ITEM(Upp::TabCtrl, tab, HSizePosZ(4, 4).VSizePosZ(44, 4))
+END_LAYOUT
+
+LAYOUT(LayHcmEntris, 588, 352)
+END_LAYOUT
+
+LAYOUT(LayHcmHead, 400, 200)
+END_LAYOUT
+
+LAYOUT(LayEntryGeneral, 812, 496)
+END_LAYOUT
+
+LAYOUT(LayEntryEquip, 400, 200)
+END_LAYOUT
+
+LAYOUT(LayEntryAnt, 400, 200)
+END_LAYOUT
+
+LAYOUT(LayHcmPack, 688, 448)
+END_LAYOUT
+
+LAYOUT(LayRefPack, 400, 200)
+END_LAYOUT
+
+LAYOUT(LayViewPack, 664, 400)
+END_LAYOUT
+
+LAYOUT(LayGridCaption, 916, 32)
+END_LAYOUT
+
+LAYOUT(LayCalcResH, 736, 108)
+END_LAYOUT
+
+LAYOUT(FrmCfg, 584, 272)
+	ITEM(Upp::TabCtrl, tab, LeftPosZ(4, 576).TopPosZ(4, 224))
+	ITEM(Upp::Button, ok, SetLabel(t_("OK")).SetFont(Upp::StdFontZ(14).Bold()).LeftPosZ(440, 64).TopPosZ(236, 28))
+	ITEM(Upp::Button, cancel, SetLabel(t_("Cancel")).SetFont(Upp::StdFontZ(14).Bold()).LeftPosZ(512, 64).TopPosZ(236, 28))
+END_LAYOUT
+
+LAYOUT(LayCfgPath, 552, 140)
+	ITEM(Upp::EditString, ed_Topo, LeftPosZ(104, 384).TopPosZ(12, 28))
+	ITEM(Upp::Label, lb_Topo, SetLabel(t_(" Path TOPO:")).SetFont(Upp::StdFont().Bold()).LeftPosZ(12, 88).TopPosZ(12, 28))
+	ITEM(Upp::Button, btn_Topo, LeftPosZ(496, 40).TopPosZ(12, 28))
+	ITEM(Upp::EditString, ed_Morpho, LeftPosZ(104, 384).TopPosZ(52, 28))
+	ITEM(Upp::Label, lb_Morpho, SetLabel(t_(" Path MORPHO:")).SetFont(Upp::StdFont().Bold()).LeftPosZ(12, 88).TopPosZ(52, 28))
+	ITEM(Upp::Button, btn_Morpho, LeftPosZ(496, 40).TopPosZ(52, 28))
+	ITEM(Upp::EditString, ed_Border, LeftPosZ(104, 384).TopPosZ(92, 28))
+	ITEM(Upp::Label, lb_Border, SetLabel(t_(" Path BORDER:")).SetFont(Upp::StdFont().Bold()).LeftPosZ(12, 88).TopPosZ(92, 28))
+	ITEM(Upp::Button, btn_Border, LeftPosZ(496, 40).TopPosZ(92, 28))
+END_LAYOUT
+
+LAYOUT(LayCfgCalc, 416, 144)
+	ITEM(Upp::Label, lb_FreqDif, SetLabel(t_(" Frequency difference between Tx and Rx <")).SetFont(Upp::StdFont().Bold()).LeftPosZ(20, 244).TopPosZ(20, 28))
+	ITEM(Upp::LabelBox, lbx_Calc, SetLabel(t_("Perform calculation if the following conditions are met (FS options)")).SetFont(Upp::StdFont().Bold()).HSizePosZ(4, 4).VSizePosZ(0, 4))
+	ITEM(Upp::EditInt, ed_DistPTxRx, LeftPosZ(280, 76).TopPosZ(92, 27))
+	ITEM(Upp::Label, lb_DistPTxRx, SetLabel(t_(" Distance between PTx and Rx <")).SetFont(Upp::StdFont().Bold()).LeftPosZ(20, 244).TopPosZ(92, 28))
+	ITEM(Upp::Label, lb_DistPTxRxV, SetLabel(t_(" km")).SetFont(Upp::StdFont().Bold()).LeftPosZ(364, 40).TopPosZ(92, 28))
+	ITEM(Upp::EditInt, ed_DistTxRx, LeftPosZ(280, 76).TopPosZ(56, 27))
+	ITEM(Upp::Label, lb_DistTxRx, SetLabel(t_(" Distance between Tx and Rx <")).SetFont(Upp::StdFont().Bold()).LeftPosZ(20, 244).TopPosZ(56, 28))
+	ITEM(Upp::Label, lb_DistTxRxV, SetLabel(t_(" km")).SetFont(Upp::StdFont().Bold()).LeftPosZ(364, 40).TopPosZ(56, 28))
+	ITEM(Upp::Label, lb_FreqV, SetLabel(t_(" MHz")).SetFont(Upp::StdFont().Bold()).LeftPosZ(364, 40).TopPosZ(20, 28))
+	ITEM(Upp::EditDoubleNotNull, ed_FreqDif, LeftPosZ(280, 76).TopPosZ(20, 28))
+END_LAYOUT
+
+LAYOUT(LayCfgEdit, 416, 144)
+	ITEM(Upp::LabelBox, lbx_Calc, SetFont(Upp::StdFont().Bold()).HSizePosZ(4, 4).VSizePosZ(0, 4))
+	ITEM(Upp::Option, op_InControl, SetLabel(t_(" Enable control of input values")).SetFont(Upp::StdFont().Bold()).LeftPosZ(12, 288).TopPosZ(16, 16))
+END_LAYOUT
+
+LAYOUT(LayCalcResV, 400, 400)
+END_LAYOUT
+
+LAYOUT(FrmMultiCalc, 460, 216)
+	ITEM(Upp::EditString, ed_FileTest, LeftPosZ(12, 384).TopPosZ(20, 28))
+	ITEM(Upp::EditString, ed_FileRef, LeftPosZ(12, 384).TopPosZ(80, 28))
+	ITEM(Upp::Button, btn_FileTest, LeftPosZ(404, 40).TopPosZ(20, 28))
+	ITEM(Upp::LabelBox, lbx_Test, SetLabel(t_(" HCM testing data file:")).SetFont(Upp::StdFont().Bold()).LeftPosZ(4, 448).TopPosZ(0, 60))
+	ITEM(Upp::Button, btn_FileRef, LeftPosZ(404, 40).TopPosZ(80, 28))
+	ITEM(Upp::LabelBox, lbx_Ref, SetLabel(t_(" HCM reference data file:")).SetFont(Upp::StdFont().Bold()).LeftPosZ(4, 448).TopPosZ(60, 60))
+	ITEM(Upp::Label, lb_MinTD, SetLabel(t_(" Show station if TD >")).SetFont(Upp::StdFont().Bold()).HSizePosZ(12, 324).TopPosZ(136, 28))
+	ITEM(Upp::LabelBox, lbx_MinTD, SetLabel(t_("Report:")).SetFont(Upp::StdFont().Bold()).HSizePosZ(4, 236).TopPosZ(120, 88))
+	ITEM(Upp::EditFloatNotNull, ed_MinTD, Min(0).LeftPosZ(144, 64).TopPosZ(136, 28))
+	ITEM(Upp::Option, opt_ShowUnCalc, SetLabel(t_("Show Uncalculated")).SetFont(Upp::StdFont().Bold()).LeftPosZ(12, 124).VSizePosZ(172, 16))
+	ITEM(Upp::Button, ok, SetLabel(t_("OK")).SetFont(Upp::StdFontZ(14).Bold()).HCenterPosZ(64, 118).TopPosZ(180, 28))
+	ITEM(Upp::Button, cancel, SetLabel(t_("Cancel")).SetFont(Upp::StdFontZ(14).Bold()).HCenterPosZ(64, 190).TopPosZ(180, 28))
+END_LAYOUT
+
+LAYOUT(FrmOpenHcm, 460, 184)
+	ITEM(Upp::EditString, ed_FileTest, LeftPosZ(12, 384).TopPosZ(24, 28))
+	ITEM(Upp::Button, btn_SelFileTest, LeftPosZ(404, 40).TopPosZ(24, 28))
+	ITEM(Upp::LabelBox, lbx_Test, SetLabel(t_(" HCM data file:")).SetFont(Upp::StdFont().Bold()).LeftPosZ(4, 448).TopPosZ(0, 64))
+	ITEM(Upp::Button, ok, SetLabel(t_("OK")).SetFont(Upp::StdFontZ(14).Bold()).HCenterPosZ(64, 118).TopPosZ(148, 28))
+	ITEM(Upp::Button, cancel, SetLabel(t_("Cancel")).SetFont(Upp::StdFontZ(14).Bold()).HCenterPosZ(64, 190).TopPosZ(148, 28))
+	ITEM(Upp::OptionBox, opb_Ref, AutoBox(true).SetLabel(t_(" HCM reference data file:")).SetFont(Upp::StdFont().Bold()).LeftPosZ(4, 448).TopPosZ(76, 60))
+	ITEM(Upp::EditString, ed_FileRef, LeftPosZ(12, 384).TopPosZ(96, 28))
+	ITEM(Upp::Button, btn_SelFileRef, LeftPosZ(404, 40).TopPosZ(96, 28))
+END_LAYOUT
+
+LAYOUT(FrmParamCalc, 384, 320)
+	ITEM(Upp::Label, lb_plz, SetLabel(t_("Polarization")).SetFont(Upp::StdFont().Bold()).LeftPosZ(20, 168).TopPosZ(20, 28))
+	ITEM(Upp::LabelBox, lbx_Calc, SetLabel(t_("Propagation model options")).SetFont(Upp::StdFont().Bold()).LeftPosZ(8, 368).TopPosZ(0, 168))
+	ITEM(Upp::EditDoubleNotNull, ed_Temp, SetFont(Upp::StdFont().Bold()).LeftPosZ(212, 100).TopPosZ(128, 28))
+	ITEM(Upp::Label, lb_t, SetLabel(t_(" Surface temperature ")).SetFont(Upp::StdFont().Bold()).LeftPosZ(20, 168).TopPosZ(128, 28))
+	ITEM(Upp::Label, lb_2, SetLabel(t_(" *C")).SetFont(Upp::StdFont().Bold()).LeftPosZ(320, 40).TopPosZ(128, 28))
+	ITEM(Upp::EditDoubleNotNull, ed_Press, SetFont(Upp::StdFont().Bold()).LeftPosZ(212, 100).TopPosZ(92, 28))
+	ITEM(Upp::Label, lb_sp, SetLabel(t_(" Surface pressure")).SetFont(Upp::StdFont().Bold()).LeftPosZ(20, 168).TopPosZ(92, 28))
+	ITEM(Upp::Label, lb_sp2, SetLabel(t_(" hPa")).SetFont(Upp::StdFont().Bold()).LeftPosZ(320, 40).TopPosZ(92, 28))
+	ITEM(Upp::Label, lb_tp, SetLabel(t_(" Required time percentage")).SetFont(Upp::StdFont().Bold()).LeftPosZ(20, 168).TopPosZ(56, 28))
+	ITEM(Upp::Label, lb_tp2, SetLabel(t_(" %")).SetFont(Upp::StdFont().Bold()).LeftPosZ(320, 40).TopPosZ(56, 28))
+	ITEM(Upp::Button, ok, SetLabel(t_("OK")).SetFont(Upp::StdFontZ(14).Bold()).LeftPosZ(240, 64).TopPosZ(284, 28))
+	ITEM(Upp::Button, cancel, SetLabel(t_("Cancel")).SetFont(Upp::StdFontZ(14).Bold()).LeftPosZ(312, 64).TopPosZ(284, 28))
+	ITEM(Upp::DropList, dl_Plz, NotNull(true).AlwaysDrop(true).LeftPosZ(212, 100).TopPosZ(20, 28))
+	ITEM(Upp::EditDoubleNotNull, ed_TimePercent, Min(0.01).Max(50).SetFont(Upp::StdFont().Bold()).LeftPosZ(212, 100).TopPosZ(56, 28))
+	ITEM(Upp::OptionBox, opb_DN, AutoBox(true).LeftPosZ(8, 144).TopPosZ(176, 100))
+	ITEM(Upp::Label, lb_N0, SetLabel(t_(" N0")).SetFont(Upp::StdFont().Bold()).HSizePosZ(24, 320).TopPosZ(232, 28))
+	ITEM(Upp::EditFloat, ed_N0, HSizePosZ(68, 244).TopPosZ(232, 28))
+	ITEM(Upp::Label, lb_DN, SetLabel(t_(" DN")).SetFont(Upp::StdFont().Bold()).LeftPosZ(24, 40).TopPosZ(196, 28))
+	ITEM(Upp::EditFloat, ed_DN, LeftPosZ(68, 72).TopPosZ(196, 28))
+	ITEM(Upp::Label, lb_MinTD, SetLabel(t_(" Show station if TD >")).SetFont(Upp::StdFont().Bold()).HSizePosZ(168, 92).TopPosZ(196, 28))
+	ITEM(Upp::LabelBox, lbx_MinTD, SetLabel(t_("Report:")).SetFont(Upp::StdFont().Bold()).HSizePosZ(160, 8).TopPosZ(176, 100))
+	ITEM(Upp::EditFloatNotNull, ed_MinTD, Min(0).LeftPosZ(296, 64).TopPosZ(196, 28))
+	ITEM(Upp::Option, opt_ShowUnCalc, SetLabel(t_("Show Uncalculated")).SetFont(Upp::StdFont().Bold()).LeftPosZ(172, 124).VSizePosZ(232, 60))
+END_LAYOUT
+
+LAYOUT(FrmReport, 728, 492)
+	ITEM(Upp::LineEdit, de_Report, SetEditable(false).HSizePosZ(4, 4).VSizePosZ(4, 4))
+END_LAYOUT
+
+LAYOUT(FrmFontSel, 344, 128)
+	ITEM(Upp::Button, ok, SetLabel(t_("ОК")).SetFont(Upp::StdFontZ(14).Bold()).RightPosZ(96, 80).TopPosZ(92, 28))
+	ITEM(Upp::Button, cancel, SetLabel(t_("Cancel")).SetFont(Upp::StdFontZ(14).Bold()).HSizePosZ(256, 8).TopPosZ(92, 28))
+	ITEM(Upp::DropList, cb_FontName, LeftPosZ(16, 236).TopPosZ(20, 24))
+	ITEM(Upp::DropList, cb_FontSize, LeftPosZ(260, 66).TopPosZ(20, 24))
+	ITEM(Upp::Option, ch_FontBold, SetLabel(t_("Bold")).SetFont(Upp::StdFont().Bold()).LeftPosZ(16, 72).TopPosZ(52, 18))
+	ITEM(Upp::LabelBox, lb_Font, SetLabel(t_("Font")).SetFont(Upp::StdFont().Bold()).LeftPosZ(8, 328).TopPosZ(0, 80))
+END_LAYOUT
+
+LAYOUT(OneValGridEditDlg, 396, 292)
+	ITEM(Upp::Button, ok, SetLabel(t_("OK")).SetFont(Upp::StdFontZ(14).Bold()).RightPosZ(80, 64).BottomPosZ(8, 28))
+	ITEM(Upp::Button, cancel, SetLabel(t_("Cancel")).SetFont(Upp::StdFontZ(14).Bold()).RightPosZ(8, 64).BottomPosZ(8, 28))
+	ITEM(Upp::GridCtrl, grid, HSizePosZ(4, 4).VSizePosZ(4, 44))
+END_LAYOUT
+
+LAYOUT(TwoValGridEditDlg, 396, 292)
+	ITEM(Upp::Button, ok, SetLabel(t_("OK")).SetFont(Upp::StdFontZ(14).Bold()).RightPosZ(80, 64).BottomPosZ(8, 28))
+	ITEM(Upp::Button, cancel, SetLabel(t_("Cancel")).SetFont(Upp::StdFontZ(14).Bold()).RightPosZ(8, 64).BottomPosZ(8, 28))
+	ITEM(Upp::GridCtrl, grid, HSizePosZ(4, 4).VSizePosZ(4, 44))
+END_LAYOUT
+
+LAYOUT(AntCpXpEditDlg, 396, 104)
+	ITEM(Upp::Button, ok, SetLabel(t_("OK")).SetFont(Upp::StdFontZ(14).Bold()).RightPosZ(76, 64).BottomPosZ(8, 28))
+	ITEM(Upp::Button, cancel, SetLabel(t_("Cancel")).SetFont(Upp::StdFontZ(14).Bold()).RightPosZ(4, 64).BottomPosZ(8, 28))
+	ITEM(Upp::GridCtrl, grid, HSizePosZ(4, 4).VSizePosZ(4, 44))
+END_LAYOUT
+
+LAYOUT(AboutDlg, 472, 144)
+	ITEM(Upp::Button, cancel, SetLabel(t_("OK")).SetFont(Upp::StdFontZ(14).Bold()).HCenterPosZ(76, -174).TopPosZ(108, 28))
+	ITEM(Upp::ImageCtrl, image, LeftPosZ(8, 112).TopPosZ(8, 92))
+	ITEM(Upp::RichTextCtrl, richText, HSizePosZ(128, 8).TopPosZ(8, 128))
+END_LAYOUT
+
